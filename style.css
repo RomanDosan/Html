@@ -1,147 +1,115 @@
-.laba1
-{
-    width: 45%;   
-    border: 4px double black;
-    padding: 5px;
-    padding-right: 20px;    
-    float: left;;}
-.laba2
-{ 
-    width: 45%;   
-    border: 4px double black; 
-    padding: 5px;
-    padding-right: 20px;    
-    float: left;
-   }
-.laba3
-{ 
-    width: 92.5%; 
-    border: 4px double black;  
-    padding: 5px;
-    padding-right: 20px;     
-    float: left;
-   }
-.demo {
-    max-width: 1024px;
-    padding: 0 20px;
-    margin: 5% 10%;
-}
-/* скрываем чекбоксы и блоки с содержанием */
-.hide,
-.hide + label ~ div {
-    display: none;
-}
-/* вид текста label */
-.hide + label {
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+body,
+html {
+    height: 100%;
+    width: 100%;
     margin: 0;
-    padding: 0;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
+    font-family: roboto;
+    color: #858585;
+    text-align: justify;
 }
-/* вид текста label при активном переключателе */
-.hide:checked + label {
-    color: red;
-    border-bottom: 0;
-}
-/* когда чекбокс активен показываем блоки с содержанием  */
-.hide:checked + label + div {
-    display: block; 
-    background: #efefef;
-    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
-    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
-    box-shadow: inset 3px 3px 10px #7d8e8f;
-    margin-left: 20px;
-    padding: 10px;
-    /* чуточку анимации при появлении */
-     -webkit-animation:fade ease-in 0.5s; 
-     -moz-animation:fade ease-in 0.5s;
-     animation:fade ease-in 0.5s; 
-}
-/* анимация при появлении скрытых блоков */
-@-moz-keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
-}
-@-webkit-keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
-}
-@keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }   
-}
-.hide + label:before {
-    background-color: #1e90ff;
-    color: #fff;
-    content: "\002B";
-    display: block;
-    float: left;
-    font-size: 14px; 
-    font-weight: bold;
-    height: 16px;
-    line-height: 16px;
-    margin: 3px 5px;
+
+header {
     text-align: center;
-    width: 16px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-.hide:checked + label:before {
-    content: "\2212";
-}
-
-#img6{
-   width: 490px;
-   margin-top: -8px; 
+    color: white;
+    font-size: 17px;
+    background-size: cover;
+    background-color: #ccc;
+    height: 672px;
+    top: 0px;
+    padding-top: 1%;
 }
 
-table{
-  margin-top: 5px;
+li a {
+    color: white;
+    border: 1px solid white;
 }
-th {
-  font-size: 13px;
-  font-weight: bold;
-  background: #FFD3BB;
-  border-top: 4px solid #aabcfe;
-  border-bottom: 1px solid #fff;
-  color: #121258;
-  padding: 8px;
-}
-td {
-  background: #FFDEDE;
-  border-bottom: 2px solid #fff;
-  color: #112222;
-  border-top: 1px solid transparent;
-  padding: 4px;
-  padding-left: 15px;padding-right: 45px;
-}
-tr:hover td {
-  background: #FFBEFF;
-}
-#title{
-    width: 100%
-    margin: auto;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 25px;
-    color: black;
-    font-family: sans-serif;
-    margin-bottom: 15px;
-}
-.text_laba{
-  color: black;
-  margin-left: 20px;
-  max-width: 700px;
 
+a {
+    color: white;
 }
-#laba{
+
+hr {
+    border: 2px solid #1b8c30;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#table {
+    height: 100%;
     position: relative;
-    margin-left: 275px;
-    margin-top: -258px;
-    width: 657px;
-    height: 400px;
-    background: #999;
-    z-index: 100;
+    margin: 0 auto;
+    border: solid 1px red;
+}
+
+header img {
+    /*position: fixed;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-nav>li {
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+#Special_attention {
+    padding: 2%;
+    background-color: #1b8c30;
+    color: white;
+    font-size: 3vh;
+}
+
+#Special_attention h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+td>h4 {
+    color: #1b8c30;
+    text-align: start;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1b8c30;
+    text-align: start;
+}
+
+div.container {
+    margin-bottom: 4vh !important;
+}
+
+thead>tr th {
+    vertical-align: middle !important;
+}
+
+thead {
+    background-color: #7bc8c9;
+    color: white;
+    text-align: center !important;
+}
+
+#dotted_border {
+    border: 1px dotted #1b8c30;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    article {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
 }
